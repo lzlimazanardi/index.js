@@ -178,3 +178,11 @@ details p { margin-bottom: 0; color: var(--muted); }
     max-width: 100%;
   }
 }
+/* Ajuste da faixa de informações da home */
+
+.info-strip-small {
+  max-width: 620px;
+  margin-left: auto;
+  margin-right: auto;
+  grid-template-columns: repeat(2, 1fr);
+}

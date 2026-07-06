@@ -186,3 +186,17 @@ details p { margin-bottom: 0; color: var(--muted); }
   margin-right: auto;
   grid-template-columns: repeat(2, 1fr);
 }
+/* Centraliza a faixa com FAQ e Mobile */
+
+.info-strip-small {
+  max-width: 620px;
+  margin: 30px auto 0;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+@media (max-width: 620px) {
+  .info-strip-small {
+    max-width: 100%;
+    grid-template-columns: 1fr;
+  }
+}

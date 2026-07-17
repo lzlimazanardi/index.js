@@ -5,19 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Suporte | Skalli</title>
   <meta name="description" content="Canais de suporte do Skalli">
-  <meta name="theme-color" content="#0b6b5c">
+  <meta name="theme-color" content="#f5f5ef">
   <link rel="stylesheet" href="../assets/css/styles.css">
+  <script src="../assets/js/site.js" defer></script>
 </head>
-<body>
+<body class="inner-page support-page">
   <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <div class="scroll-progress" aria-hidden="true"><span></span></div>
   <header class="site-header">
     <div class="container header-inner">
-      <a class="brand" href="../" aria-label="Skalli - início">
+      <a class="brand" href="../" aria-label="Skalli — início">
         <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
         <span>Skalli</span>
       </a>
-      <nav class="site-nav" aria-label="Navegação principal">
-        <a class="" href="../">Início</a><a class="" href="../privacidade/">Privacidade</a><a class="" href="../termos/">Termos</a><a class="" href="../faq/">FAQ</a><a class="active" href="../suporte/">Suporte</a>
+      <button class="nav-toggle" type="button" aria-label="Abrir menu" aria-controls="site-nav" aria-expanded="false"><span class="nav-toggle-box" aria-hidden="true"></span></button>
+      <nav class="site-nav" id="site-nav" aria-label="Navegação principal">
+        <a href="../">Início</a><a href="../privacidade/">Privacidade</a><a href="../termos/">Termos</a><a href="../faq/">FAQ</a><a class="active" href="../suporte/">Suporte</a>
       </nav>
     </div>
   </header>
@@ -25,9 +28,9 @@
     
 <section class="page-hero">
   <div class="container">
-    <p class="eyebrow">Suporte</p>
-    <h1>Como falar com o Skalli</h1>
-    <p class="lead">Use esta página para encontrar os canais oficiais de contato, suporte e privacidade.</p>
+    <p class="eyebrow">Canais oficiais</p>
+    <h1>Estamos aqui para ajudar.</h1>
+    <p class="lead">Escolha o canal adequado para falar sobre o aplicativo, pedir suporte ou tratar de privacidade.</p>
   </div>
 </section>
 <div class="container content-card">
@@ -51,14 +54,15 @@
   <footer class="site-footer">
     <div class="container footer-grid">
       <div>
-        <a class="brand footer-brand" href="../" aria-label="Skalli - início">
+        <a class="brand footer-brand" href="../" aria-label="Skalli — início">
           <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
           <span>Skalli</span>
         </a>
-        <p>Gestão simples e segura para escalas, plantões, trocas, substituições, notificações e relatórios.</p>
+        <p>Escalas, equipes, trocas, substituições, notificações e relatórios reunidos em um fluxo simples.</p>
       </div>
       <div>
-        <strong>Documentos</strong>
+        <strong>Informações</strong>
+        <a href="../faq/">Perguntas frequentes</a>
         <a href="../privacidade/">Política de Privacidade</a>
         <a href="../termos/">Termos de Uso</a>
         <a href="../excluir-conta/">Exclusão de conta</a>
@@ -72,7 +76,7 @@
     </div>
     <div class="container footer-bottom">
       <span>© 2026 Skalli. Todos os direitos reservados.</span>
-      <a href="#conteudo">Voltar ao topo</a>
+      <a href="#conteudo">Voltar ao topo ↑</a>
     </div>
   </footer>
 </body>

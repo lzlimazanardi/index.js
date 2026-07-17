@@ -3,84 +3,191 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Início | Skalli</title>
-  <meta name="description" content="Skalli - gestão de escalas profissionais">
-  <meta name="theme-color" content="#0b6b5c">
+  <title>Skalli | Escalas profissionais com mais clareza</title>
+  <meta name="description" content="Organize escalas, plantões, equipes, trocas, substituições e relatórios com o Skalli.">
+  <meta name="theme-color" content="#041f1b">
   <link rel="stylesheet" href="assets/css/styles.css">
+  <script src="assets/js/site.js" defer></script>
 </head>
-<body>
+<body class="home-page">
   <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <div class="scroll-progress" aria-hidden="true"><span></span></div>
   <header class="site-header">
     <div class="container header-inner">
-      <a class="brand" href="" aria-label="Skalli - início">
+      <a class="brand" href="" aria-label="Skalli — início">
         <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
         <span>Skalli</span>
       </a>
-      <nav class="site-nav" aria-label="Navegação principal">
-        <a class="active" href="">Início</a><a class="" href="privacidade/">Privacidade</a><a class="" href="termos/">Termos</a><a class="" href="faq/">FAQ</a><a class="" href="suporte/">Suporte</a>
+      <button class="nav-toggle" type="button" aria-label="Abrir menu" aria-controls="site-nav" aria-expanded="false">
+        <span class="nav-toggle-box" aria-hidden="true"></span>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="Navegação principal">
+        <a class="active" href="">Início</a>
+        <a href="privacidade/">Privacidade</a>
+        <a href="termos/">Termos</a>
+        <a href="faq/">FAQ</a>
+        <a href="suporte/">Suporte</a>
       </nav>
     </div>
   </header>
+
   <main id="conteudo">
-    
-<section class="hero hero-centered">
-  <div class="container hero-grid hero-grid-centered">
-    <div class="hero-copy">
-      <p class="eyebrow">Skalli.app</p>
-      <h1>Escalas de plantão com menos ruído e mais clareza.</h1>
-      <p class="lead">O Skalli ajuda equipes a organizar plantões, membros, trocas, substituições, notificações e relatórios em um fluxo simples, pensado para a rotina real de quem precisa que a escala funcione.</p>
-      <div class="hero-actions hero-actions-centered">
-        <a class="button primary" href="privacidade/">Política de Privacidade</a>
-        <a class="button secondary" href="termos/">Termos de Uso</a>
+    <section class="home-hero">
+      <div class="container home-hero-grid">
+        <div class="home-hero-copy" data-reveal>
+          <p class="eyebrow">Gestão de escalas profissionais</p>
+          <h1>Mais clareza <span>em cada plantão.</span></h1>
+          <p class="lead">O Skalli reúne escalas, equipes, trocas, substituições, notificações e relatórios em um só lugar — para quem administra e para quem está no plantão.</p>
+          <div class="hero-actions">
+            <a class="button primary" href="#como-funciona">Veja como funciona</a>
+            <a class="button secondary" href="faq/">Acessar o FAQ</a>
+          </div>
+          <div class="hero-proof">
+            <span class="proof-mark" aria-hidden="true">✓</span>
+            <span>Uma rotina mais organizada para administradores e plantonistas.</span>
+          </div>
+        </div>
+
+        <div class="hero-product" aria-label="Exemplo visual de uma escala organizada no Skalli" data-reveal>
+          <div class="product-glow" aria-hidden="true"></div>
+          <div class="product-window">
+            <div class="window-bar">
+              <span>Agenda do serviço</span>
+              <span class="window-dots" aria-hidden="true"><i></i><i></i><i></i></span>
+            </div>
+            <div class="product-body">
+              <div class="service-head">
+                <div><small>Serviço atual</small><strong>Plantão Central</strong></div>
+                <span class="status-pill">Escala completa</span>
+              </div>
+              <div class="week-row" aria-label="Semana de 14 a 20 de julho">
+                <span class="day">SEG <b>14</b></span>
+                <span class="day">TER <b>15</b></span>
+                <span class="day is-active">QUA <b>16</b></span>
+                <span class="day">QUI <b>17</b></span>
+                <span class="day">SEX <b>18</b></span>
+                <span class="day">SÁB <b>19</b></span>
+                <span class="day">DOM <b>20</b></span>
+              </div>
+              <div class="shift-list">
+                <div class="shift-item">
+                  <span class="shift-icon" aria-hidden="true">☀</span>
+                  <span class="shift-info"><small>Turno diurno</small><strong>Dra. Marina Alves</strong></span>
+                  <span class="shift-time">07h–19h</span>
+                </div>
+                <div class="shift-item">
+                  <span class="shift-icon night" aria-hidden="true">◐</span>
+                  <span class="shift-info"><small>Turno noturno</small><strong>Dr. Paulo Mendes</strong></span>
+                  <span class="shift-time">19h–07h</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="floating-card card-a" aria-hidden="true">
+            <span class="check">✓</span>
+            <span><strong>Troca aprovada</strong><small>A escala foi atualizada</small></span>
+          </div>
+          <div class="floating-card card-b" aria-hidden="true">
+            <span class="check">↗</span>
+            <span><strong>Relatório pronto</strong><small>Período selecionado</small></span>
+          </div>
+        </div>
+      </div>
+      <span class="hero-index" aria-hidden="true">Organização que acompanha o plantão</span>
+    </section>
+
+    <div class="feature-ticker" aria-label="Funcionalidades do Skalli">
+      <div class="ticker-track">
+        <div class="ticker-group"><span>Escalas</span><span>Plantões</span><span>Equipes</span><span>Trocas</span><span>Substituições</span><span>Notificações</span><span>Relatórios</span></div>
+        <div class="ticker-group" aria-hidden="true"><span>Escalas</span><span>Plantões</span><span>Equipes</span><span>Trocas</span><span>Substituições</span><span>Notificações</span><span>Relatórios</span></div>
       </div>
     </div>
-  </div>
-</section>
-<section class="section alt">
-  <div class="container">
-    <div class="section-heading">
-      <p class="eyebrow">Conheça o Skalli</p>
-      <h2>Encontre as informações que você precisa.</h2>
-      <p class="lead">Consulte as regras de uso, saiba como seus dados são protegidos e tire dúvidas sobre as funções do aplicativo.</p>
-    </div>
-    <div class="card-grid">
-      <a class="card card-link" href="privacidade/"><span><strong>Política de Privacidade</strong><small>Como o Skalli trata dados pessoais.</small></span><span>→</span></a>
-      <a class="card card-link" href="termos/"><span><strong>Termos de Uso</strong><small>Regras de acesso e utilização do aplicativo.</small></span><span>→</span></a>
-      <a class="card card-link" href="faq/"><span><strong>Perguntas frequentes</strong><small>Aprenda a criar serviços, convidar participantes, montar escalas e solicitar trocas.</small></span><span>→</span></a>
-    </div>
-  </div>
-</section>
-<section class="section">
-  <div class="container">
-    <div class="section-heading">
-      <p class="eyebrow">Funcionalidades</p>
-      <h2>Feito para a operação da escala.</h2>
-    </div>
-    <div class="card-grid">
-      <div class="card"><h3>Plantões e turnos</h3><p>Organize escalas diurnas e noturnas por serviço.</p></div>
-      <div class="card"><h3>Trocas e substituições</h3><p>Registre solicitações, aceite, recusa e aprovação administrativa quando necessário.</p></div>
-      <div class="card"><h3>Relatórios</h3><p>Gere registros operacionais para conferência e documentação da escala.</p></div>
-    </div>
-    <div class="info-strip info-strip-small">
-      <div class="metric"><strong>Organização</strong><span>Visualize a equipe e os plantões de cada serviço em um só lugar</span></div>
-      <div class="metric"><strong>Acompanhamento</strong><span>Receba notificações e consulte alterações diretamente na escala</span></div>
-    </div>
-  </div>
-</section>
 
+    <section class="section product-section" id="como-funciona">
+      <div class="container">
+        <div class="section-heading" data-reveal>
+          <p class="eyebrow">O que o Skalli organiza</p>
+          <h2>A rotina da escala, sem depender de mensagens perdidas.</h2>
+          <p class="lead">Cada função foi pensada para facilitar a conferência do plantão e deixar claro o que precisa de atenção.</p>
+        </div>
+        <div class="feature-grid">
+          <article class="feature-card">
+            <span class="feature-number">01 / ESCALA</span>
+            <span class="feature-symbol" aria-hidden="true">▦</span>
+            <div><h3>Plantões no lugar certo.</h3><p>Organize turnos diurnos e noturnos por serviço, data e participante. A equipe consulta a mesma escala, sempre atualizada.</p></div>
+          </article>
+          <article class="feature-card">
+            <span class="feature-number">02 / EQUIPE</span>
+            <span class="feature-symbol" aria-hidden="true">◎</span>
+            <div><h3>Todos sabem onde estão.</h3><p>Convide participantes, defina administradores e mantenha cada serviço com sua própria equipe.</p></div>
+          </article>
+          <article class="feature-card">
+            <span class="feature-number">03 / TROCAS</span>
+            <span class="feature-symbol" aria-hidden="true">⇄</span>
+            <div><h3>Trocas com começo, meio e fim.</h3><p>Envie, aceite ou recuse solicitações e acompanhe a aprovação administrativa dentro do aplicativo.</p></div>
+          </article>
+          <article class="feature-card">
+            <span class="feature-number">04 / ACOMPANHAMENTO</span>
+            <span class="feature-symbol" aria-hidden="true">↗</span>
+            <div><h3>Notificações e relatórios para conferir.</h3><p>Receba avisos sobre movimentações importantes e gere relatórios a partir das informações registradas na escala.</p></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section workflow-section">
+      <div class="container workflow-grid">
+        <div class="workflow-intro" data-reveal>
+          <p class="eyebrow">Da criação à rotina</p>
+          <h2>Começar é simples.</h2>
+          <p class="lead">Crie o serviço, reúna a equipe e monte a escala. Depois, o Skalli ajuda todos a acompanhar o que muda.</p>
+        </div>
+        <div class="workflow-steps">
+          <article class="workflow-step"><span>01</span><div><h3>Crie o serviço</h3><p>Informe os dados principais e a quantidade necessária de plantonistas por turno.</p></div></article>
+          <article class="workflow-step"><span>02</span><div><h3>Convide a equipe</h3><p>Adicione participantes por código ou pelo telefone usado no cadastro.</p></div></article>
+          <article class="workflow-step"><span>03</span><div><h3>Monte a escala</h3><p>Distribua os participantes por data e turno ou aplique um modelo recorrente.</p></div></article>
+          <article class="workflow-step"><span>04</span><div><h3>Acompanhe as mudanças</h3><p>Consulte solicitações, notificações e relatórios sem procurar informações em várias conversas.</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section resource-section">
+      <div class="container">
+        <div class="section-heading" data-reveal>
+          <p class="eyebrow">Informações públicas</p>
+          <h2>Tudo o que você precisa consultar.</h2>
+          <p class="lead">Entenda como o aplicativo funciona, quais são as regras de uso e como seus dados são tratados.</p>
+        </div>
+        <div class="resource-list">
+          <a class="resource-link" href="faq/"><span>01</span><span><strong>Perguntas frequentes</strong><small>Passo a passo das principais funções do Skalli.</small></span><span class="resource-arrow" aria-hidden="true">↗</span></a>
+          <a class="resource-link" href="privacidade/"><span>02</span><span><strong>Política de Privacidade</strong><small>Como os dados pessoais são tratados e protegidos.</small></span><span class="resource-arrow" aria-hidden="true">↗</span></a>
+          <a class="resource-link" href="termos/"><span>03</span><span><strong>Termos de Uso</strong><small>Regras, responsabilidades e condições de utilização.</small></span><span class="resource-arrow" aria-hidden="true">↗</span></a>
+          <a class="resource-link" href="suporte/"><span>04</span><span><strong>Suporte</strong><small>Canais oficiais para dúvidas e atendimento.</small></span><span class="resource-arrow" aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="final-cta">
+      <div class="container final-cta-grid" data-reveal>
+        <h2>Ainda ficou com alguma dúvida? <span>A resposta pode estar no FAQ.</span></h2>
+        <a class="button light" href="faq/">Consultar perguntas</a>
+      </div>
+    </section>
   </main>
+
   <footer class="site-footer">
     <div class="container footer-grid">
       <div>
-        <a class="brand footer-brand" href="" aria-label="Skalli - início">
+        <a class="brand footer-brand" href="" aria-label="Skalli — início">
           <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
           <span>Skalli</span>
         </a>
-        <p>Gestão simples e segura para escalas, plantões, trocas, substituições, notificações e relatórios.</p>
+        <p>Escalas, equipes, trocas, substituições, notificações e relatórios reunidos em um fluxo simples.</p>
       </div>
       <div>
-        <strong>Documentos</strong>
-        <a href="privacidade/">Política de Privacidade</a>
+        <strong>Informações</strong>
+        <a href="faq/">Perguntas frequentes</a>
+        <a href="privacidade/">Privacidade</a>
         <a href="termos/">Termos de Uso</a>
         <a href="excluir-conta/">Exclusão de conta</a>
       </div>
@@ -93,7 +200,7 @@
     </div>
     <div class="container footer-bottom">
       <span>© 2026 Skalli. Todos os direitos reservados.</span>
-      <a href="#conteudo">Voltar ao topo</a>
+      <a href="#conteudo">Voltar ao topo ↑</a>
     </div>
   </footer>
 </body>
